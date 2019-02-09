@@ -1,0 +1,23 @@
+.app {
+  text-align: center;
+}
+
+.app__title {
+  font-size: 1.5em;
+}
+
+.app__intro {
+  font-size: large;
+}
+
+.app__background {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  height: 100%;
+  z-index: -99;
+}

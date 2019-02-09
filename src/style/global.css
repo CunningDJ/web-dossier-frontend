@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+input, textarea, button {
+    outline: none;
+}
+
+/**
+  * Global button styling
+  * Background & font colors can be further specified in components
+  */
+button {
+  font-weight: bold;
+
+  border-color: black;
+  border-width: 1px;
+  border-radius: 2px;
+}
+
+/**
+  * Global item box styling
+  * Embosed box for fitting items inside
+  */
+.item-box {
+    box-shadow: 2px 2px black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #777;
+    padding: 15px 23px;
+    margin: 12px 7px;
+}

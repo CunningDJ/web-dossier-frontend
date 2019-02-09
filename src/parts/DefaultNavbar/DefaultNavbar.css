@@ -1,0 +1,30 @@
+.default-navbar {
+  background-color: #222;
+  height: 90px;
+  color: white;
+  position: relative;
+}
+
+.default-navbar__logo {
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.default-navbar__title {
+  display: inline-block;
+  margin: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .default-navbar {
+    height: 50px;
+  }
+
+  .default-navbar__title {
+    display: inline-block;
+    margin: 0px;
+  }
+}

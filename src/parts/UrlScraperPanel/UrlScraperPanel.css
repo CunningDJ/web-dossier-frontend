@@ -1,0 +1,70 @@
+/* Master */
+.url-scraper-panel {
+
+}
+
+
+/* URL Input form */
+.url-scraper-panel__form {
+
+}
+
+.url-scraper-panel__url-input {
+  margin: 5px;
+  height: 20px;
+  width: 200px;
+  border-color: #777;
+  border-width: 1px;
+}
+
+.url-scraper-panel__submit-button {
+  height: 45px;
+  width: 80px;
+
+  font-size: 18px;
+
+  background-color: #222;
+  color: white;
+
+  margin: 5px;
+}
+
+.url-scraper-panel__form-error, .url-scraper-panel__url-input-error {
+    color: red;
+    margin: 0px;
+}
+
+
+/* Data Visualization */
+.url-scraper-panel__vis {
+
+}
+
+.url-scraper-panel__vis-title {
+  font-size: 55px;
+}
+
+.url-scraper-panel__anch-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.url-scraper-panel__anch-table td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.url-scraper-panel__anch-table td a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 700;
+}
+
+.url-scraper-panel__anch-table tr:nth-child(even) {
+  background-color: #8ec8ff;
+}
+
+.url-scraper-panel__anch-table tr:nth-child(odd) {
+  background-color: white;
+}
