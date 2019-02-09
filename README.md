@@ -1,4 +1,4 @@
-# JSDOM-React Scraper
+# Web Dossier: Frontend 
 This frontend is based of Microsoft's Create React App Typescript Starter.  Below are the descriptions of the different npm scripts available to serve the frontend in a dev or prod environment.
 
 ## Available Scripts
