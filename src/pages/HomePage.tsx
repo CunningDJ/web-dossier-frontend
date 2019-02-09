@@ -13,9 +13,9 @@ export default class UrlScraperPage extends React.Component<IHomePageProps, IHom
   public render() {
     return (
       <div className="home-page">
-        <DefaultNavbar title="Home" />
-        <h1>Welcome to Web Dossier</h1>
-        <p>Here, you can get visualizations of the data on any web page.</p>
+        <DefaultNavbar title="Web Dossier" />
+        <h2>Welcome to Web Dossier</h2>
+        <p>Use our scraping tools to find data on websites.</p>
         <div className="home-page__page-links item-box">
             <h2>Tools</h2>
             <Link to="/url-scraper">
