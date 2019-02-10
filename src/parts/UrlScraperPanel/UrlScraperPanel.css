@@ -10,11 +10,12 @@
 }
 
 .url-scraper-panel__url-input {
-  margin: 5px;
-  height: 20px;
+  height: 30px;
   width: 200px;
-  border-color: #777;
-  border-width: 1px;
+
+  font-size: 15px;
+
+  margin: 5px;
 }
 
 .url-scraper-panel__submit-button {

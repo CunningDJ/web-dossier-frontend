@@ -1,8 +1,9 @@
 import axios from 'axios';
 
-import { 
-    //IGetScrapedUrlData, 
-    IGetScrapedUrlDataResponse 
+import {
+    IGetScrapedUrlDataResponse,
+
+    IGetScrapedReaderDataResponse
  } from './ApiCaller.d';
 
 import apiConfig from './apiConfig';
@@ -14,7 +15,8 @@ import { isLocalhost } from '../../util';
 const API_BASE = isLocalhost() ? apiConfig.base.dev : apiConfig.base.prod;
 
 const API_PATH = {
-    urlScrape: apiPath('/url-scrape')    // /url-scrape?url={url}
+    urlScrape: apiPath('/url-scrape'),   // /url-scrape?url={url},
+    readerScrape: apiPath('/reader')     // /reader?url={url}
 }
 
 /*
@@ -30,4 +32,13 @@ function apiPath(subPath: string) {
 export function getScrapedUrlData(url: string): Promise<IGetScrapedUrlDataResponse> {
     const urlQuery = { url };
     return axios.get(API_PATH.urlScrape, { params: urlQuery });
+}
+
+
+/**
+ * Reader scrape data
+ */
+export function getScrapedReaderData(url: string): Promise<IGetScrapedReaderDataResponse> {
+  const urlQuery = { url };
+  return axios.get(API_PATH.readerScrape, { params: urlQuery });
 }

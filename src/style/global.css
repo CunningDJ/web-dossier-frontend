@@ -12,6 +12,12 @@ input, textarea, button {
     outline: none;
 }
 
+input {
+  border-radius: 1px;
+  border-width: 1px;
+  border-color: #777;
+}
+
 /**
   * Global button styling
   * Background & font colors can be further specified in components

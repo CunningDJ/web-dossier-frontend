@@ -3,14 +3,14 @@ import { FormEvent, MouseEvent } from 'react';
 import isUrl from 'is-url';
 
 import { getScrapedUrlData } from '../ApiCaller/ApiCaller';
-import { IGetScrapedUrlData, IAnchorHostsStats } from '../ApiCaller/ApiCaller.d';
+import { IGetScrapedUrlDataReturn, IAnchorHostsStats } from '../ApiCaller/ApiCaller.d';
 
 import './UrlScraperPanel.css';
 
 interface IUrlScraperPanelProps {}
 interface IUrlScraperPanelState {
   urlInput: string;
-  scrapeData: IGetScrapedUrlData | null,
+  scrapeData: IGetScrapedUrlDataReturn | null,
 
   dataFetching: boolean;
 
@@ -108,16 +108,13 @@ export default class UrlScraperPanel extends React.Component<IUrlScraperPanelPro
   }
 
   public render() {
-    const sdata: IGetScrapedUrlData | null = this.state.scrapeData;
+    const sdata: IGetScrapedUrlDataReturn | null = this.state.scrapeData;
     const scrapeDataVisStyle = sdata && !this.state.dataFetching ?
                                   {} : {display: 'none'};
 
     return (
       <div className="url-scraper-panel">
         <form className="url-scraper-panel__form item-box">
-          {/*<div>
-            <h1>Page Scraper</h1>
-          </div>*/}
           <p className="url-scraper-panel__form-error">{this.state.formError}</p>
           <div>
             <p className="url-scraper-panel__url-input-error">{this.state.urlInputError}</p>

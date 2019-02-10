@@ -1,0 +1,38 @@
+.reader-page {
+
+}
+
+.reader-page__panel {
+  background-color: #333;
+  color: white;
+}
+
+.reader-page__error {
+
+}
+
+.reader-page__page-view {
+  text-align: left;
+}
+
+.reader-page__page-view a {
+  color: skyblue;
+}
+
+.reader-page__form-input {
+  height: 30px;
+  width: 200px;
+  font-size: 15px;
+}
+
+.reader-page__submit-button {
+  height: 40px;
+  width: 80px;
+
+  background-color: white;
+
+  font-size: 18px;
+  font-weight: normal;
+
+  margin: 10px;
+}

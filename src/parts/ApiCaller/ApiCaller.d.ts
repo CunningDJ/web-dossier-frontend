@@ -5,7 +5,10 @@ export interface IDefaultJsonReturn<T> {
     data: T;
 }
 
-export interface IGetScrapedUrlData {
+/**
+ * Url Scraper
+ */
+export interface IGetScrapedUrlDataReturn {
   title: string;
   description: string;
 
@@ -20,4 +23,14 @@ export interface IAnchorHostsStats {
         { href: string, text: string }[];
 }
 
-export interface IGetScrapedUrlDataResponse extends AxiosResponse<IDefaultJsonReturn<IGetScrapedUrlData>> {}
+export interface IGetScrapedUrlDataResponse extends AxiosResponse<IDefaultJsonReturn<IGetScrapedUrlDataReturn>> {}
+
+/**
+ * Reader Scraper
+ */
+
+export interface IGetScrapedReaderDataReturn {
+  rawHTML: string;
+}
+
+export interface IGetScrapedReaderDataResponse extends AxiosResponse<IDefaultJsonReturn<IGetScrapedReaderDataReturn>> {}

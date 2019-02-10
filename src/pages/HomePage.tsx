@@ -21,6 +21,9 @@ export default class UrlScraperPage extends React.Component<IHomePageProps, IHom
             <Link to="/url-scraper">
               <button className="home-page__tool-button">URL Scraper</button>
             </Link>
+            <Link to="/reader">
+              <button className="home-page__tool-button">Reader</button>
+            </Link>
         </div>
       </div>
     );
