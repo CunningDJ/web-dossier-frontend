@@ -12,7 +12,7 @@ interface IApiBaseUrlConfig {
 const apiConfig: IApiConfig = {
     base: {
         dev: "http://localhost:9191",
-        prod: "api.webdossier.net"
+	prod: "http://api.webdossier.net"
     }
 }
 
